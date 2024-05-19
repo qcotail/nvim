@@ -1,8 +1,8 @@
 local vim = vim
 
 -- 
-vim.opt.tabstop        = 4
-vim.opt.shiftwidth     = 4
+vim.opt.tabstop        = 2
+vim.opt.shiftwidth     = 2
 vim.opt.smartcase      = true
 vim.opt.colorcolumn    = '95'
 vim.opt.number         = true
@@ -18,12 +18,12 @@ vim.cmd([[colorscheme ddbeatt]])
 
 -- Remeber last position
 vim.api.nvim_create_autocmd("BufReadPost", {
-    pattern = {"*"},
-    callback = function()
-        if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
-            vim.api.nvim_exec("normal! g'\"",false)
-        end
-    end
+	pattern = {"*"},
+	callback = function()
+		if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
+			vim.api.nvim_exec("normal! g'\"",false)
+		end
+	end
 })
 
 if vim.g.neovide then
