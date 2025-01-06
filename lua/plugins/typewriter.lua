@@ -1,0 +1,3 @@
+require('typewriter').setup()
+
+return {}

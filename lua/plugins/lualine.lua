@@ -1,23 +1,23 @@
 local colors = {
-  red = '#EE5555',
-  grey = '#A76D60',
-  black = '#160f29',
-  white = '#ddbea8',
-  light_green = '#83a598',
-  orange = '#246A73',
-  green = '#8ec07c',
+  red         = '#EE5555',
+  grey        = '#C7A55C',
+  black       = '#f9f1a5',
+  white       = '#222222',
+  light_green = '#685641',
+  orange      = '#bb7744',
+  green       = '#628661',
 }
 
 local theme = {
   normal = {
-	a = { fg = colors.white, bg = colors.black },
+	a = { fg = colors.white, bg = colors.grey },
 	b = { fg = colors.white, bg = colors.grey },
 	c = { fg = colors.black, bg = colors.white },
-	z = { fg = colors.white, bg = colors.black },
+	z = { fg = colors.white, bg = colors.grey },
   },
   insert = { a = { fg = colors.black, bg = colors.light_green } },
-  visual = { a = { fg = colors.black, bg = colors.orange } },
-  replace = { a = { fg = colors.black, bg = colors.green } },
+  visual = { a = { fg = colors.white, bg = colors.orange } },
+  replace = { a = { fg = colors.white, bg = colors.red } },
 }
 
 local empty = require('lualine.component'):extend()
@@ -122,5 +122,4 @@ require('lualine').setup {
 	lualine_x = {},
   },
 }
-
 return {}
