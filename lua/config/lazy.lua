@@ -24,7 +24,7 @@ local vim = vim
 vim.opt.tabstop         = 2
 vim.opt.shiftwidth      = 2
 vim.opt.smartcase       = true
-vim.opt.colorcolumn     = '95'
+vim.opt.colorcolumn     = '102'
 vim.opt.number          = true
 vim.opt.relativenumber  = true
 vim.opt.termguicolors   = true
@@ -34,6 +34,16 @@ vim.opt.cursorline      = true
 vim.opt.list            = true
 vim.opt.listchars.extends = "◦"
 vim.opt.textwidth       = 90
+
+vim.g.vimtex_compiler_latexmk = {
+  options = {
+		'-verbose',
+		'-file-line-error',
+		'-synctex=1',
+		'-interaction=nonstopmode',
+		'-shell-escape',
+  },
+}
 
 -- Remember last position
 vim.api.nvim_create_autocmd("BufReadPost", {
