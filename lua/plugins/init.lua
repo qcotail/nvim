@@ -106,4 +106,8 @@ return {
 			end,
 		},
 	},
+	{
+		"HakonHarnes/img-clip.nvim",
+		event = "VeryLazy",
+	},
 }
