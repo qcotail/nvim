@@ -52,15 +52,6 @@ return {
 		}
 	},
 	{
-		'joshuadanpeterson/typewriter',
-			dependencies = {
-				'nvim-treesitter/nvim-treesitter',
-			},
-	},
-	{
-		'HiPhish/rainbow-delimiters.nvim'
-	},
-	{
 		'savq/melange-nvim'
 	},
 	{
