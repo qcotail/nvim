@@ -55,49 +55,6 @@ return {
 		'savq/melange-nvim'
 	},
 	{
-		"zaldih/themery.nvim",
-		lazy = false,
-		config = function()
-		require("themery").setup({
-			themes = {{
-				name = "Miasma",
-				colorscheme = "miasma",
-				before = [[
-					vim.opt.background = "dark"
-					require('lualine').setup{options={theme="gruvbox"}}
-					]],
-			},{
-				name = "Melange",
-				colorscheme = "melange",
-				before = [[
-					vim.opt.background = "dark"
-					]],
-			},{
-				name = "Melange Light",
-				colorscheme = "melange",
-				before = [[
-					vim.opt.background = "light"
-				]],
-			}},
-			livePreview = true
-		})
-		end
-	},
-	{
-		"f-person/auto-dark-mode.nvim",
-		opts = {
-			update_interval = 1000,
-			set_dark_mode = function()
-				vim.api.nvim_set_option_value("background", "dark", {})
-				vim.cmd("colorscheme miasma")
-			end,
-			set_light_mode = function()
-				vim.api.nvim_set_option_value("background", "light", {})
-				vim.cmd("colorscheme melange")
-			end,
-		},
-	},
-	{
 		"HakonHarnes/img-clip.nvim",
 		event = "VeryLazy",
 	},

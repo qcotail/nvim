@@ -28,7 +28,7 @@ vim.opt.colorcolumn     = '102'
 vim.opt.number          = true
 vim.opt.relativenumber  = true
 vim.opt.termguicolors   = true
---vim.opt.background      = 'dark'
+vim.opt.background      = 'dark'
 vim.opt.clipboard       = 'unnamed'
 vim.opt.cursorline      = true
 vim.opt.list            = true
@@ -65,3 +65,6 @@ require("lazy").setup({
 		notify = false
 	},
 })
+
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
